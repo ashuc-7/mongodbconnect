@@ -8,8 +8,8 @@ with open('README.md', 'r', encoding='utf-8') as f:
 __version__ = "0.0.4"
 REPO_NAME = "mongodbconnectorpkg"
 PKG_NAME= "databaseautomation"
-AUTHOR_USER_NAME = "sunnysavita10"
-AUTHOR_EMAIL = "sunny.savita@ineuron.ai"
+AUTHOR_USER_NAME = "Ashish"
+AUTHOR_EMAIL = "ashishchandola19@gmail.com"
 
 setup(
     name=PKG_NAME,
@@ -25,6 +25,7 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
+    install_requires=["pymongo","pymongo[srv]","dnspython","pandas","numpy","ensure"]
     )
 
 
